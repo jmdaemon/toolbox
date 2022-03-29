@@ -7,9 +7,14 @@
  * This project uses @Incubating APIs which are subject to change.
  */
 
+group = 'io.github.jmdaemon.toolbox'
+version = '0.1.0'
+
 plugins {
     // Apply the java-library plugin for API and implementation separation.
     id 'java-library'
+    // Publish new library release to the maven repositories
+    id 'maven-publish'
 }
 
 repositories {
@@ -33,4 +38,22 @@ testing {
             useJUnitJupiter('5.8.1')
         }
     }
+} 
+
+// Publish new releases
+publishing {
+    publications {
+        myLibrary(MavenPublication) {
+            from components.java
+        }
+    }
+
+    repositories {
+        maven {
+            name = rootProject.name
+            url = layout.buildDirectory.dir("dist")
+        }
+    }
 }
+
+
