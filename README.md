@@ -15,17 +15,19 @@ installed on your system.
 
 ## Building
 
-To build this library from source run
+To build toolbox from source run:
 
 ``` bash
 gradle build
 ```
 
-To create a new distribution run:
+To create a new release run:
 
 ``` bash
 gradle jar
 ```
+
+The new release should be in `toolbox/build/libs/toolbox-${VERSION_MAJOR}-${VERSION_MINOR}-${VERSION_PATCH}.jar`
 
 ## Documentation
 
