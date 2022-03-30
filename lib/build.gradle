@@ -65,6 +65,6 @@ jar {
 }
 
 java {
-    // Create a sources jar
-    withSourcesJar()
+    withSourcesJar() // Create a sources jar
+    withJavadocJar() // Create a jar with the javadocs
 } 
