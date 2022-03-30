@@ -63,3 +63,8 @@ jar {
                    'Implementation-Version': project.version)
     }
 }
+
+java {
+    // Create a sources jar
+    withSourcesJar()
+} 
