@@ -14,7 +14,7 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'io.github.jmdaemon.toolbox'
+group = 'io.github.jmdaemon'
 version = '0.1.0'
 
 repositories {
