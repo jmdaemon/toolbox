@@ -50,12 +50,9 @@ dependencies {
 ```
 
 Note that since toolbox isn't published on the `mavenCentral()` repositories, you must add
-the following to your `settins.gradle` file:
+the following to your `settings.gradle` file:
 
-```
-
-# settings.gradle
-
+```  gradle
 sourceControl {
     gitRepository("https://github.com/jmdaemon/toolbox.git") {
         producesModule('io.github.jmdaemon:toolbox')
